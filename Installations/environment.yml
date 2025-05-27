@@ -1,0 +1,25 @@
+name: tickers-sectors
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
+  - requests
+  - beautifulsoup4
+  - lxml
+  - pip
+  - notebook
+  - xgboost=2.0  # GPU desteği için conda-forge kanalından
+  - catboost
+  - cudatoolkit=11.8  # GPU desteği için ekle
+  - pip:
+      - yfinance
+      - tsfresh
+      - investpy
+      - quandl
